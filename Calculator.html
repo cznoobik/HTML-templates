@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kalkulačka</title>
+</head>
+<body>
+<div class="wrap" align="center">
+    <br><br><br><br><br><br><br><br>
+    <form name="cal">
+        <input type="text" name="display" style="width: 400px">
+        <br></br>
+        <input type="button" value="9" onclick="cal.display.value+='9'">
+        <input type="button" value="8" onclick="cal.display.value+='8'">
+        <input type="button" value="7" onclick="cal.display.value+='7'">
+        <input type="button" value="+" onclick="cal.display.value+='+'">
+        <br></br>
+        <input type="button" value="6" onclick="cal.display.value+='6'">
+        <input type="button" value="5" onclick="cal.display.value+='5'">
+        <input type="button" value="4" onclick="cal.display.value+='4'">
+        <input type="button" value="-" onclick="cal.display.value+='-'">
+        <br></br>
+        <input type="button" value="3" onclick="cal.display.value+='3'">
+        <input type="button" value="2" onclick="cal.display.value+='2'">
+        <input type="button" value="1" onclick="cal.display.value+='1'">
+        <input type="button" value="*" onclick="cal.display.value+='*'">
+        <br></br>
+        <input type="button" value="0" onclick="cal.display.value+='0'">
+        <input type="button" value="/" onclick="cal.display.value+='/'">
+        <input type="button" value="%" onclick="cal.display.value+='%'">
+        <input type="button" value="=" onclick="cal.display.value= eval(cal.display.value)">
+        <br></br>
+        <input type="button" value="DELETE" onclick="cal.display.value=''" id ="del">
+    </form>
+</div>
+<style>
+    body{
+        background-image: url(Backround.jpg);
+        background-color: black;
+    }
+
+    input{
+	width: 100px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid black;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+    background-color: deepskyblue;
+}
+</style>
+</body>
+</html>
